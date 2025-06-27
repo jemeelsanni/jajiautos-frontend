@@ -8,8 +8,8 @@ interface AppConfig {
 
 const getConfig = (): AppConfig => {
   // Try different ways to get environment variables
-  let apiUrl = 'http://localhost:3005/api, https://autostore-backend-led1.onrender.com/api'; // Default API URL
-  let environment = 'development';
+  let apiUrl = 'https://autostore-backend-led1.onrender.com/api'; // Default API URL
+  let environment = 'production';
 
   // For Create React App
   if (typeof process !== 'undefined' && process.env) {
